@@ -1,73 +1,51 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        frontend
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <center>
+      <a href="/join"><button class="huge" id="join-button">JOIN GAME</button></a>
+      <button class="huge" id="create-button">CREATE GAME</button>
+    </center>
   </div>
 </template>
 
 <script>
-export default {}
+
+  export default {
+    layout: 'normal'
+  }
+
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  h1 {
+    left: 15vw;
+    right: 15vw;
+    margin-top: 200px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(100vw / 12.2);
+    line-height: 112px;
+    text-transform: lowercase;
+    color: #F1B12D;
+    text-align: center;
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .huge {
+    width: 401px;
+    height: 200px;
+    border: 4px solid #FFFFFF;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 32px;
+    line-height: 39px;
+    cursor: pointer;
+    transition: 150ms;
+    background: #E9E9E9;
+  }
 
-.links {
-  padding-top: 15px;
-}
+  .huge:active {
+    background: linear-gradient(180deg, #0C7702 0%, #00A711 100%);
+  }
+
 </style>
